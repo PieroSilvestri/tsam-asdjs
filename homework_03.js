@@ -10,6 +10,10 @@ Array.prototype.sumwhileneg = function (){
     )
     return tot;
 }
+
+function ex_1(myarray){
+    return myarray.sumwhileneg();
+}
 //3
 Array.prototype.media = function () {
         if (this.length == 0){
@@ -17,6 +21,9 @@ Array.prototype.media = function () {
     }else{
        return this.reduce((acc,x) => acc + x,0) / this.length;
     }
+}
+function ex_3(myarray){
+    return myarray.media();
 }
 //9
 Array.prototype.revert = function () {
@@ -33,4 +40,8 @@ Array.prototype.oddfirst = function () {
     var tarray = this.filter(x => (x%2 == 0));
     var tarrayodd = this.filter(x => !(x%2 == 0));
     return tarrayodd.concat(tarray);
+}
+
+function ex_11(myarray){
+    return myarray.oddfirst();
 }
