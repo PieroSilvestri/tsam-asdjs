@@ -18,7 +18,7 @@ function ex_1_F(x){
 }
 function ex_2_F(x){
     var tmparray= [];
-    x.every(x => {
+    x.every(x >= {
         if (x>0){
             tmparray.push(x);
         }
@@ -56,7 +56,6 @@ function sumintervalF(a,b){
         }
         return tarray.reduce((acc,tarray) => acc+tarray,0);
     }
-
 }
 //5
 function ex_5_F(x,y){
